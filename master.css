@@ -1,0 +1,1661 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css");
+
+*{
+    margin: 0; padding: 0; 
+    font-family: "Pretendard Variable", 'Pretendard', Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+li{list-style:none;}
+
+a{text-decoration: none;}
+/* html,body,main{height: 100%;} */
+
+@media screen and (min-width:1024px){
+    /*header*/
+    header{
+        width: 100%;
+        height: 70px;
+        margin: 0 auto;
+        background: #232323;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+    }
+    .mHead{display: none;}
+
+    /*nav*/
+    nav{
+        width: 1280px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+
+    nav h1{
+        float: left;
+    }
+    nav h1 img{
+        margin-top: 11px;
+    }
+    nav .list ul {
+        float: left;
+        padding-left: 50px;
+        line-height: 70px;
+    }
+
+    nav .list ul li{
+        font-size: 18px;
+        float: left;
+        margin: 0 50px;
+    }    
+    nav .list ul li a{
+        color: #FECB00;
+    }
+    nav .login{
+        float: left;
+        margin-top: 20px;
+    }
+
+    nav .login a{
+        font-size: 12px;
+        color: #fff;
+        float: left;
+        display: block;
+        border-left: 1px solid #707070;
+        border-right: 1px solid #707070;
+        padding: 0 40px;
+    }
+    nav .login a span{
+        color: #FECB00;
+        font-weight: bold;
+    }
+    nav .icon{
+        float: left;
+        margin-left: 20px;
+        margin-top: 13px;
+    }
+
+    nav .icon ul li{
+        float: left;
+        margin: 0 21px;
+    }
+    .Mmenu{display: none;}
+
+    /*mainBanner*/
+    #mainBanner{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        padding-top: 70px;
+        position: relative;
+    }
+    video{width: 100%;}
+
+    .videoText{
+        position: absolute;
+        top: 30%;
+        right: 20%;
+        color: #fff;
+        font-size: 2vw;
+        text-align: right;
+        line-height: 80px;
+    }
+    .videoText span{
+        color: #FECB00;
+        font-weight: bold;
+    }
+
+    /*intro*/
+    #intro{
+        width: 66.74%;
+        overflow: hidden;
+        margin: 50px auto;
+    }
+    #intro img{
+        width: 100%;
+    }
+      
+    /* #intro .introText{
+        position: absolute;
+        top: 40%;
+        right: 20%;
+        z-index: 2;
+    }
+    #intro .introText h2{
+        color: #FECB00;
+        margin-bottom: 40px;
+        font-size: 1.875vw;
+    }
+    #intro .introText p{
+        color: #fff;
+        font-size: 1.25vw;
+    }
+    #intro .introText p span{
+        color: #FECB00;
+        font-weight: bold;
+    } */
+
+    /* contents */
+    #contents{
+        background: url(img/backimg@2x.png)no-repeat 50% 50% ;
+        width: 100%;
+        height: auto;
+        padding-bottom: 50px;
+    }
+
+    /* freecon */
+    .freeconM{display: none;}
+    .freecon{
+        width: 1280px;
+        height: 1294px;
+        overflow: hidden;
+        margin: 0 auto;
+        padding-top: 200px;
+    }
+    .freecon img{
+        display: block;
+    }
+    .freecon .left{
+        width: 528px;
+        float: left;
+        overflow: hidden;
+    }
+    .freecon .right{
+        width: 752px; 
+        float: left;
+        overflow: hidden;
+    }
+    .right .inLeft{
+        width: 362px;
+        float: left;
+        overflow: hidden;
+    }
+    .right .inRight{
+        width: 390px;
+        float: left;
+        overflow: hidden;
+    }
+    .mechine_use{
+        background: url(img/mechine_use@2x.png)no-repeat;
+        width: 792px;
+        height: 746px;
+    }
+    .homeT{
+        background: url(img/homeT@2x.png)no-repeat;
+        width: 792px;
+        height: 348px;
+    }
+    .stretching{
+        background: url(img/stretching@2x.png)no-repeat;
+        width: 1128px;
+        height: 485px;
+    }
+    .inbody{
+        background: url(img/inbody@2x.png)no-repeat;
+        width: 543px;
+        height: 609px;
+    }
+    .posture{
+        background: url(img/posture@2x.png)no-repeat;
+        width: 585px;
+        height: 609px;
+    }
+    .freecon a .img{
+        transition: 1s;
+    }
+    .freecon a:hover .img{
+        transform: translateX(-33.33%);
+    }
+
+    /* subBanner */
+    #subBannerW{
+        width: 100%;
+        margin-top: 200px;
+    }
+    .swiper-wrapper{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .swiper-slide{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .swiper-slide img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* class */
+    #pClass{
+        width: 66.74%;
+        margin: 200px auto 0;
+    }
+    #pClass .swiper-wrapper{
+        width: 100%;
+    }
+    #pClass .swiper-slide{
+        width: 100%;
+
+    }
+    #pClass .swiper-slide img{
+        width: 100%;
+    } 
+    #pClass .swiperBtn{
+        width: 100%;
+        height: auto;
+    }
+    /* .pClassWr .swiper-button-next{
+        position: absolute;
+        right: 13%;
+        z-index: 5;
+    }
+    .pClassWr .swiper-button-prev{
+        position: absolute;
+        left: 13%;
+        z-index: 5;
+    } */
+    
+
+    /* subContents */
+    #subContents{width: 100%;}
+
+    /* community */
+    .community{
+        width: 66.74%;
+        height: 500px;
+        margin: 150px auto 120px;
+        overflow: hidden;
+    }
+    .community ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .community li{
+        width: 23.8%;
+        border: 1px solid #707070;
+        border-radius: 15px;
+        position: relative;
+    }
+    .community li .coIcon{
+        position: absolute;
+        top: 45%;
+        left: 28%;
+        display: none;
+    }
+    .community li .coIcon img:nth-child(3){
+        margin-left: 25px;
+    }
+    .community li .coIcon{
+        color: #fff;
+        font-size: 24px;
+    }
+    .community a:hover{
+        filter: blur(6px);
+    }
+    .community a:hover ~ .coIcon{
+        display: block;
+    }
+    .commuCard{
+        width: 100%;
+        height: 450px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 16%) 3px 3px 3px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .commuImg1{
+        background: url(img/commu1@2x.png)no-repeat center center;
+        width: 100%;
+        height: 250px;
+    }
+    .commuImg2{
+        background: url(img/commu2@2x.png)no-repeat center center;
+        width: 100%;
+        height: 250px;
+    }
+    .commuImg3{
+        background: url(img/commu3@2x.png)no-repeat center center;
+        width: 100%;
+        height: 250px;
+    }
+    .commuImg4{
+        background: url(img/commu4@2x.png)no-repeat center center;
+        width: 100%;
+        height: 250px;
+    }
+    .commuText{
+        font-size: 16px;
+        margin: 24px 14px;
+        color: #000;
+    }
+    .commuText span{
+        position: absolute;
+        bottom: 5%;
+        right: 3%;
+        font-size: 14px;
+    }
+
+    /* guideCon */
+    .guideCon{
+        width: 66.74%;
+        margin: 100px auto;
+        overflow: hidden;
+    }
+    .guideCon h3{
+        font-size: 28px;
+        font-weight: 700;
+        color: #39BEF1;
+        margin-bottom: 40px;
+    }
+    .guideCon ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .guideCon ul li{
+        width: 23.5%;
+        overflow: hidden;
+        border: 1px solid #707070;
+        position: relative;
+        padding-bottom: 50px;
+    }        
+    
+    .guideCon h4{
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .guideCard img{
+        width: 100%;
+    }
+    .guideCon .textBox{
+        width: 90%;
+        height: 95px;
+        color: #000;
+        margin: 24px 12px 12px ;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .guideCon .priceBox{
+        background-color: #ccc;
+        width: 100%;
+        height: 50px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+    .guideCon .price{
+        color: #000;
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        
+    }
+
+    /* contact */
+
+    #contact{
+        width: 66.67%;
+        height: 785px;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 100;
+        top: 80px;
+        left: 400px;
+        visibility: hidden;
+    }
+    .conteactBox{
+        width: 500px;
+        height: 630px;
+        background: #272727;
+        float: right;
+        border-radius: 10px;
+        box-shadow: #272727 3px 3px 2px;
+        position: relative;
+    }
+    .conteactBox h4{
+        color: #ABABAB;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 15px 0 0 20px;
+    }
+    .conteactBox p{
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 24px 0 0 20px;
+    }
+    .conteactBox img{
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+    .conteactBox form{
+        margin-left: 50px;
+        margin-top: 35px;
+    }
+    .conteactBox label{
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .conteactBox input{
+        margin-top: 34px;
+        margin-bottom: 40px;
+    }
+    .conteactBox .inp{
+        width: 224px;
+        height: 30px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: #272727;
+        border-bottom: 1px solid #FFFFFF;
+        font-size: 20px;
+        color: #fff;
+    }
+    .conteactBox .inpBox{
+        background: #272727;
+        width: 410px;
+        height: 115px;
+        color: #fff;
+        border: #fff 1px solid;
+    }
+    .conteactBox #btn{
+        margin: 0;
+        width: 170px;
+        height: 40px;
+        border-radius: 12px;
+        border: none;
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        margin-left: -86px;
+    }
+
+    /* aIcon */    
+    #conteactIcon{
+        cursor: pointer;
+        position: fixed;
+        bottom: 70px;
+        right: 50px;
+        z-index: 2;
+        width: 50px;
+        height: 50px;
+    }
+    #topIcon{
+        cursor: pointer;
+        position: fixed;
+        bottom: 150px;
+        right: 50px;
+        z-index: 1;
+        width: 50px;
+        height: 50px;
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: 400px;
+        background: #232323;
+        overflow: hidden;
+    }
+    .footerBox{
+        width: 66.74%;
+        margin: 0 auto;
+    }
+    .footerBox a{
+        display: inline-block;
+        margin: 55px 0 30px 0;
+    }
+    .footerBox p{
+        font-size: 15px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    .footerBox li{
+        float: left;
+        margin-right: 16px;
+    }
+
+}
+
+
+@media screen and (min-width:768px) and (max-width:1023px){
+    /* header */
+    .mHead{display: none;}
+    .Mmenu{display: none;}
+    .login{display: none;}
+    header{
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        background: #232323;
+        position: fixed;
+        top: 0;
+        z-index: 99;
+    }
+    h1{
+        text-align: center;
+    }
+    h1 img{
+        margin-top: 5px;
+    }
+    nav{
+        width: 100%;
+        height: 100px;
+    }
+    .list{
+        width: 90%;
+        line-height: 38px;
+        margin: 0 auto;
+    }
+    .list ul{
+        width: 100%;
+        text-align: center;
+    }
+    .list ul li{
+        float: left;
+        width: 20%;
+    }
+    .list ul li a{
+        color: #FECB00;
+        font-weight: 600;
+        font-size: 17px;
+    }
+    .icon{
+        position: absolute;
+        top: 10px;
+        right: 10%;
+    }
+    .icon ul li{
+        float: left;
+        margin: 0 10px;
+    }
+
+    /* mainbanner */
+    #mainBanner{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        margin: 0 auto;
+        padding-top: 100px;
+        position: relative;
+    }
+    video{
+        width: 100%;
+    }
+    .videoText{
+        position: absolute;
+        top: 30%;
+        right: 20%;
+        color: #fff;
+        font-size: 2vw;
+        text-align: right;
+        line-height: 80px;
+    }
+    .videoText span{
+        color: #FECB00;
+        font-weight: bold;
+    }
+
+    #contents{
+        background: url(img/backimg@2x.png)no-repeat 50% 50% ;
+        width: 100%;
+        height: auto;
+    }
+
+    /* intro */
+    #intro{
+        width: 100%;
+        overflow: hidden;
+        margin: 30px auto;
+    }
+    #intro img{
+        width: 100%;
+    }
+
+    /* freecon */
+    .freecon{display: none;}
+    .freeconM{
+        width: 768px;
+        height: 776.4px;
+        margin: 0 auto;
+        position: relative;
+        padding-top: 30px;
+    }
+    .freeWrap{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+    }
+    .fm1{
+        width: 317px;
+        height: 448px;
+        overflow: hidden;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .mechine_use{
+        background: url(img/mechine_useT@2x.png)no-repeat;
+        background-image: cover;
+        width: 475px;
+        height: 448px;
+    }
+    .fm2{
+        width: 317px;
+        height: 448px;
+        overflow: hidden;
+        position: absolute;
+        bottom: -119px;
+        left: 0;
+    }
+    .homeT{
+        background: url(img/homeTT@2x.png)no-repeat;
+        width: 475px;
+        height: 208px;
+    }
+    .fm3{
+        width: 451px;
+        height: 448px;
+        overflow: hidden;
+        position: absolute;
+        top: 0px;
+        right: 0;
+    }
+    .stretching{
+        background: url(img/stretchingT@2x.png)no-repeat;
+        width: 676px;
+        height: 291px;
+    }
+    .fm4{
+        width: 217px;
+        height: 448px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 38px;
+        right: 234px;
+    }
+    .inbody{
+        background: url(img/inbodyT@2x.png)no-repeat;
+        width: 326px;
+        height: 365px;
+    }
+    .fm5{
+        width: 234px;
+        height: 448px;
+        overflow: hidden;
+        position: absolute;
+        bottom: 38px;
+        right: 0px;
+    }
+    .posture{ 
+        background: url(img/postureT@2x.png)no-repeat;
+        width: 351px;
+        height: 365px;
+    }
+    .freeconM a .imgM{
+        transition: 1s;
+    }
+    .freeconM a .imgM.on{
+        transform: translateX(-33.33%);
+    }
+
+    /* subbanner */
+    #subBannerW{
+        width: 100%;
+        margin-top: 60px;
+    }
+    .swiper-wrapper{
+        width: 100%;
+        height: auto;
+        text-align: center;
+    }
+    .swiper-slide{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .swiper-slide img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* pClass */
+    #pClass{
+        width: 100%;
+        margin: 50px auto 0;
+        padding-bottom: 50px;
+    }
+    #pClass .swiper-wrapper{
+        width: 100%;
+    }
+    #pClass .swiper-slide{
+        width: 100%;
+
+    }
+    #pClass .swiper-slide img{
+        width: 100%;
+    } 
+    #pClass .swiperBtn{
+        width: 100%;
+        height: auto;
+    }
+
+    /* subContents */
+    #subContents{width: 100%;}
+
+    /* community */
+    .community{
+        width: 90%;
+        height: 500px;
+        margin: 120px auto 50px;
+        overflow: hidden;
+    }
+    .community ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .community li{
+        width: 23.8%;
+        border: 1px solid #707070;
+        border-radius: 15px;
+        position: relative;
+    }
+    .community li .coIcon{
+        display: none;
+    }
+
+    .commuCard{
+        width: 100%;
+        height: 400px;
+        border-radius: 15px;
+        box-shadow: rgba(0, 0, 0, 16%) 3px 3px 3px;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .commuImg1{
+        background: url(img/commu1@2x.png)no-repeat center center;
+        width: 100%;
+        height: 250px;
+    }
+    .commuImg2{
+        background: url(img/commu2@2x.png)no-repeat center center;
+        width: 100%;
+        height: 250px;
+    }
+    .commuImg3{
+        background: url(img/commu3@2x.png)no-repeat center center;
+        width: 100%;
+        height: 250px;
+    }
+    .commuImg4{
+        background: url(img/commu4@2x.png)no-repeat center center;
+        width: 100%;
+        height: 250px;
+    }
+    .commuText{
+        font-size: 16px;
+        margin: 16px 14px;
+        color: #000;
+    }
+    .commuText span{
+        position: absolute;
+        bottom: 5%;
+        right: 3%;
+        font-size: 14px;
+    }
+
+    /* guideCon */
+    .guideCon{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .guideCon h3{
+        font-size: 28px;
+        font-weight: 700;
+        color: #39BEF1;
+        margin-bottom: 40px;
+    }
+    .guideCon ul{
+        display: flex;
+        justify-content: space-between;
+    }
+    .guideCon ul li{
+        width: 24.5%;
+        overflow: hidden;
+        border: 1px solid #707070;
+        position: relative;
+        padding-bottom: 50px;
+    }        
+    .guideCard img{
+        width: 100%;
+    }
+    .guideCon h4{
+        font-size: 24px;
+        font-weight: 700;
+        color: #000;
+        text-align: center;
+        margin-top: 24px;
+    }
+    .guideCon .textBox{
+        width: 90%;
+        height: 95px;
+        color: #000;
+        margin: 24px 12px 12px ;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .guideCon .priceBox{
+        background-color: #ccc;
+        width: 100%;
+        height: 50px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        display: -webkit-box;
+        line-clamp: 3;
+        -webkit-box-orient: vertical;
+        
+    }
+    .guideCon .price{
+        color: #000;
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+        
+    }
+
+    /* contact */
+
+    #contact{
+        width: 100%;
+        margin: 0 auto;
+        position: fixed;
+        z-index: 100;
+        top: 125px;
+        left: -24%;
+        visibility: hidden;
+    }
+    .conteactBox{
+        width: 500px;
+        height: 630px;
+        background: #272727;
+        float: right;
+        border-radius: 10px;
+        box-shadow: #272727 3px 3px 2px;
+        position: relative;
+    }
+    .conteactBox h4{
+        color: #ABABAB;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 15px 0 0 20px;
+    }
+    .conteactBox p{
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 24px 0 0 20px;
+    }
+    .conteactBox img{
+        position: absolute;
+        top: 20px;
+        right: 25px;
+    }
+    .conteactBox form{
+        margin-left: 50px;
+        margin-top: 35px;
+    }
+    .conteactBox label{
+        color: #fff;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    .conteactBox input{
+        margin-top: 34px;
+        margin-bottom: 40px;
+    }
+    .conteactBox .inp{
+        width: 224px;
+        height: 30px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: #272727;
+        border-bottom: 1px solid #FFFFFF;
+        font-size: 20px;
+        color: #fff;
+    }
+    .conteactBox .inpBox{
+        background: #272727;
+        width: 410px;
+        height: 115px;
+        color: #fff;
+        border: #fff 1px solid;
+    }
+    .conteactBox #btn{
+        margin: 0;
+        width: 170px;
+        height: 40px;
+        border-radius: 12px;
+        border: none;
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        margin-left: -86px;
+    }
+
+    /* aIcon */    
+    #conteactIcon{
+        cursor: pointer;
+        position: fixed;
+        bottom: 50px;
+        right: 30px;
+        z-index: 2;
+        width: 40px;
+        height: 40px;
+    }
+    #topIcon{
+        cursor: pointer;
+        position: fixed;
+        bottom: 110px;
+        right: 30px;
+        z-index: 1;
+        width: 40px;
+        height: 40px;
+    }
+
+    /* footer */
+    footer{
+        width: 100%;
+        height: 300px;
+        background: #232323;
+        overflow: hidden;
+        margin-top: 100px;
+    }
+    .footerBox{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .footerBox a{
+        display: inline-block;
+        margin: 25px 0 30px 0;
+    }
+    .footerBox p{
+        font-size: 15px;
+        color: #fff;
+        font-weight: bold;
+        line-height: 30px;
+    }
+    .footerBox li{
+        float: left;
+        margin-right: 16px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 767px){
+    /* header */
+    header{
+        width: 100%;
+        margin: auto;
+        line-height: 50px;
+        top: 0;
+    }
+    .mHead{
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        position: fixed;
+        top:0;
+        z-index: 100;
+        height: 45px;
+        background: #232323;
+    }
+    #menubtn{
+        position: absolute;
+        left: 10px;
+    }
+   
+    #mlogo{
+        margin: auto;
+        line-height: 60px;
+    }
+    #mlogo img{
+        width: 82px;
+    }
+
+    /* nav */
+    nav{display: none;}
+
+    /* Mmenu */
+    .Mmenu{
+        width: 75%;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: -75%;
+        background: #232323;
+        z-index: 400;
+        transition: left .3s ease-in-out;
+    }
+    .Mmenu.on{left: 0;}
+
+    #xbtn{
+        position: absolute;
+        top: 3%;
+        right: 3%;
+        cursor: pointer;
+    }
+    .Mmenu .loginBtn{
+        text-align: center;
+        margin-top: 10%;
+    }
+    .Mmenu .loginBtn li{
+        margin: 5;
+    }
+    .Mmenu .loginBtn a{
+        display: inline-block;
+    }
+    .Mmenu .loginBtn::after{
+        content: '';
+        display: block;
+        width: 85%;
+        border-bottom: 1px solid #fff;
+        margin: 6% auto;
+    }
+    .seach_cart{
+        width: 90%;
+        height: 13%;
+        margin: 0 auto;
+        overflow: hidden;
+        padding-top: 3%;
+    }
+    .seach_cart>li{
+        margin: 0 auto;
+        position: relative;
+    }
+    .seach_cart>li:first-child{
+        float: left;
+        margin-left: 20%;
+    }
+    .seach_cart>li:last-child{
+        float: right;
+        margin-right: 10%;
+    }
+    .seach_cart>li>a{
+        color: #FECB00;
+        font-size: 22px;
+        font-weight: 600;
+    }
+    .seach_cart .seach:before,
+    .seach_cart .cart:before{
+        position: absolute;
+        top: 4px;
+        left: -45px;
+        width: 40px;
+        height: 40px;
+    }
+    .seach_cart .seach:before{
+        content: url(img/search@2x.png);
+        
+    }
+    .seach_cart .cart:before{
+        content: url(img/shopcart@2x.png);
+    }
+    .mList{
+        overflow: hidden; 
+        width: 70%;  
+        margin: 0 auto;
+    }
+    .mList>li{
+    margin-bottom: 8%;
+    }
+    .mList>li>a{
+        color: #FECB00;
+        font-weight: 600;
+        font-size: 20px;
+    }
+    .no-scroll {
+        overflow: hidden !important;
+        touch-action: none; 
+    }
+    #mbg.on{
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 300;
+        width: 100%;
+        height: 100%;
+        cursor: pointer;
+    }
+
+    /* mainBanner */
+    #mainBanner{
+        width: 100%;
+        height: 767px;
+        margin: 0 auto;
+        overflow: hidden;
+        position: relative;
+    }
+    #mainBanner video{
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: -68%;
+    }
+    #mainBanner .videoText{
+        position: absolute;
+        right: 10%;
+        top : 30%;
+        line-height: 76px;
+        color: #fff;
+        font-size: 1.25em;
+        text-align: right;
+    }
+    #mainBanner .videoText span{
+        color: #FECB00;
+        font-weight: bold;
+    }
+
+    /* intro */
+    #intro{
+        width: 100%;
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    #intro picture{
+        width: 100%;
+        overflow: hidden;
+    }
+    #intro img{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    /* contents */
+    #contents{
+        width: 100%;
+        background: url(img/backimg@2x.png)no-repeat 0 50%;
+        background-size: cover;
+        overflow: hidden;
+    }
+    /* freecon */
+    .freecon{display: none;}
+    .freeconM{
+        width: 87%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .freeconM>a{
+        display: block;
+        width: 350px;
+        height: 250px;
+    }
+    .fm{
+        width: 350px;
+        margin: 0 auto;
+        overflow: hidden;
+    }                           
+    .mechine_use{
+        background: url(img/mechine_useM@2x.png)no-repeat;
+        width: 350px;
+        height: 250px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .homeT{
+        background: url(img/homeTM@2x.png)no-repeat;
+        width: 350px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .stretching{
+        background: url(img/stretchingM@2x.png)no-repeat;
+        width: 350px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .inbody{
+        background: url(img/inbodyM@2x.png)no-repeat;
+        width: 350px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .posture{
+        background: url(img/postureM@2x.png)no-repeat;
+        width: 350px;
+        height: 250px;
+        margin: 0 auto;
+    }
+    .freeconM a .imgM{
+        transition: 1s;
+    }
+    .freeconM a .imgM.on{
+        /* transform: translateX(-33.33%); */
+        background-position: 100%;
+    }
+    
+    /* subBannerW */
+    #subBannerW{
+        width: 100%;
+        margin: 50px 0 50px;
+    }
+    .swiper-wrapper{
+        width: 100%;
+        text-align: center;
+    }
+    .swiper-slide{
+        margin: 0 auto;
+        text-align: center;
+    }
+    .swiper-slide img{
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    /* pClass */
+    #pClass{
+        width: 90%;
+        margin: 0 auto 50px;
+    }
+    #pClass .swiper-wrapper{
+        width: 100%;
+    }
+    #pClass .swiper-slide{
+        width: 100%;
+
+    }
+    #pClass .swiper-slide img{
+        width: 100%;
+    } 
+    #pClass .swiperBtn{
+        width: 100%;
+        height: auto;
+    }
+
+    /* subContents */
+    #subContents{
+        width: 100%;
+        margin: 100px auto 0;
+    }
+    /* community */
+    .community{
+        width: 90%;
+        margin: 0 auto;
+        overflow: hidden;
+    }
+    .community ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .community ul li{
+        width: 48%;
+        border: 1px solid #707070;
+        border-radius: 10px;
+        padding-bottom: 20px;
+        position: relative;
+        overflow: hidden;
+    }
+    .commuText{
+        margin: 10px auto;
+        font-size: 14px;
+        color: #000;
+        width: 90%;
+    }
+    .commuText span{
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+    }
+
+
+    .commuImg1{
+        background: url(img/commu1@2x.png)no-repeat center center;
+        width: 100%;
+        height: 150px;
+    }
+    .commuImg2{
+        background: url(img/commu2@2x.png)no-repeat center center;
+        width: 100%;
+        height: 150px;
+    }
+    .commuImg3{
+        background: url(img/commu3@2x.png)no-repeat center center;
+        width: 100%;
+        height: 150px;
+    }
+    .commuImg4{
+        background: url(img/commu4@2x.png)no-repeat center center;
+        width: 100%;
+        height: 150px;
+    }
+    .coIcon{display: none;}
+
+    /* guideCon */
+    .guideCon{
+        width: 90%;
+        margin: 50px auto;
+    }
+    .guideCon h3{
+        font-size: 1.5em;
+        color: #39BEF1;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    .guideCon ul{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .guideCon ul>li{
+        width: 48%;
+        border: 1px solid #000;
+        box-sizing: border-box;
+        position: relative;
+        padding-bottom: 45px;
+
+    }
+    .guideCon ul>li>a{
+        width: 100%;
+        display: block;
+    }
+    .guideCon img{
+        width: 100%;
+    }
+    .guideCon h4{
+        text-align: center;
+        font-size: 18px;
+        color: #000;
+        margin: 4% 0;
+    }
+    .guideCard{
+        width: 100%;
+    }
+
+    .textBox{
+        width: 90%;
+        margin: 0 auto;
+        color: #000;
+        font-size: 14px;
+    }
+    .priceBox{
+        width: 100%;
+        height: 30px;
+        background-color: #ccc;
+        font-size: 1em;
+        color: #000;
+        font-weight: 500;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+
+    }
+    .price{
+        line-height: 30px;
+    }
+
+    /* contact */
+    #contact{
+        width: 90%;
+        margin: 30px auto;
+        overflow: hidden;
+    }
+    .conteactBox{
+        width: 100%;
+        height: 550px;
+        margin: 0 auto;
+        background: #272727;
+        border-radius: 10px;
+        position: relative;
+    }
+    .conteactBox h4{
+        color: #ABABAB;
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0px 0 0 10px;
+        padding-top: 10px;
+    }
+    .conteactBox p{
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+        margin: 25px 0 0 10px;
+    }
+    .conteactBox img{
+        width: 25%;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    .conteactBox #conteactForm{
+        width: 90%;
+        margin: 30px auto;
+    }
+    .conteactBox label{
+        color: #fff;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .conteactBox input{
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+    .conteactBox .inp{
+        width: 80%;
+        height: 30px;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        background: #272727;
+        border-bottom: 1px solid #FFFFFF;
+        font-size: 16px;
+        color: #fff;
+    }
+    .conteactBox .inpBox{
+        background: #272727;
+        margin: 10px auto;
+        width: 100%;
+        height: 120px;
+        color: #fff;
+        border: #fff 1px solid;
+    }
+    .conteactBox #btn{
+        margin: 0;
+        width: 170px;
+        height: 40px;
+        border-radius: 12px;
+        border: none;
+        position: absolute;
+        bottom: 24px;
+        left: 50%;
+        margin-left: -86px;
+    }
+    .aIcon{display: none;}
+
+    /* footer */
+    footer{
+        width: 100%;
+        background:#232323 ;
+        overflow: hidden;
+        margin-top: 50px;
+        padding-bottom: 30px;
+    }
+    .footerBox{
+        color: #fff;
+        font-size: 0.9em;
+        line-height: 30px;
+        padding-top: 20px;
+        margin-left: 5%;
+    }
+    .footerBox a{display: inline-block;}
+    .footerBox .logo{
+        width: 60%;
+    }
+    .footerBox ul{
+        margin-top: 4%;
+    }
+    .footerBox li{
+        float: left;
+        margin-right: 3%;
+    }
+    
+
+    /* login page */
+
+    #loginPage{
+        height: 100vh;
+        width: 100vw;
+        background: url(img/loginbgM.png)no-repeat center 0; 
+    }
+    header{
+        width: 100%;
+        margin: 0 auto;
+        height: 45px;
+        background: #232323;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .mobMenu{
+        position: absolute;
+        top: 11px;
+        left: 12px;
+    }
+    input[id="mobMenubtn"]+.mobMenu>label{
+        display: block;
+
+    }
+    input[id="check"]{
+        display: none;
+    }
+    .mobMenu>label{
+        cursor: pointer;
+        
+    }
+    .mobMenu img{
+        width: 24px;
+        height: 24px;
+    }
+
+    /* section */
+    #loginPage .loginLogoBox{
+        display: block;
+        text-align: center;
+        margin-top: 45px;
+    }
+    #loginPage .loginLogo{
+        width: 180px;
+        height: 65.8px;
+        text-align: center;
+    }
+    #loginPage h2{
+        font-size: 24px;
+        font-weight: 700;
+        color: #fff;
+        text-align: center;
+        margin-top: 33px;
+    }
+    #loginPage hr{
+        width: 335px;
+        height: 2px;
+        margin: 8px auto 0;
+        background: #fff;
+        border: 0;
+    }
+    #loginPage .loginWrap{
+        display: block;
+        width: 335px;
+        height: 248px;
+        margin: 60px auto 0;
+    }
+    #formLogin input{
+        width: 335px;
+        height: 56px;
+        border-radius: 28px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        border: 0;
+    }
+    #formLogin input:first-child{
+        margin-bottom: 20px;
+    }
+    #formLogin input::placeholder{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-indent: 28px;
+    }
+    #formLogin input[type="checkbox"]{
+        width: 16px;
+        height: 16px;
+        margin: 15px 0 0 20px;
+    }
+    #formLogin label{
+        color: #fff;
+        font-size: 16px;
+        margin-bottom: 2px;
+    }
+    #formLogin span{
+        float: right;
+        margin-top: 15px;
+        margin-right: 20px;
+        color: #fff;
+        font-size: 16px;
+    }
+    #formLogin input[type="submit"]{
+        font-size: 20px;
+        font-weight: 700;
+        height: 40px;
+        background: #39BEF1;
+        margin-top: 42px;
+        margin-bottom: 44px;
+    }
+    #loginPage .sec{
+        margin-top: 44px;
+    }
+    #loginPage h3{
+        color: #fff;
+        font-size: 20px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 16px;
+        margin-bottom: 25px;
+    }
+    
+    #loginPage .social{
+        width: 297px;
+        margin: 0 auto;
+    }
+    #loginPage .social ul{
+        margin-top: 25px;
+    }
+    #loginPage .social li{
+        float: left;
+        margin-right: 45px;
+    }
+    #loginPage .social li:last-child{
+        margin-right: 0;
+    }
+    #loginPage .social img{
+        width: 40px;
+        height: 40px;
+    }
+}

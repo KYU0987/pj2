@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="master.css">
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="mHead">
+        <img src="img/icon_menu_w@2x.png" id="menubtn">
+        <h2 title="D-gym" id="mlogo">
+            <a href="#">
+                <img src="img/logo-W@2x.png" alt="D-gym로고">
+            </a>
+        </h2>
+    </div>
+
+    <nav>
+        <h1 title="D-gym">
+            <a href="#">
+                <img src="img/logo-W@2x.png" alt="D-gym로고">
+            </a>
+        </h1>
+        <div class="list">
+        <ul>
+                <li><a href="#">가이드</a></li>
+                <li><a href="#">클래스</a></li>
+                <li><a href="#">커뮤니티</a></li>
+                <li><a href="#">스토어</a></li>
+                <li><a href="#">멤버쉽</a></li>
+            </ul>
+        </div>
+        <div class="login">
+            <a href="#">
+                안녕하세요<br> <span>D-gym</span>에 로그인
+            </a>
+        </div>
+        <div class="icon">
+            <ul>
+                <li><a href="#"><img src="img/shopcart@2x.png" alt="장바구니"></a></li>
+                <li><a href="#"><img src="img/search@2x.png" alt="검색"></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="Mmenu">
+        <ul class="loginBtn">
+            <li><a href="#"><img src="img/loginIcon@2x.png"></a></li>
+            <li><a href="#"><img src="img/loginBtn@2x.png"></a></li>
+        </ul>
+        <img id="xbtn" src="img/xbtn@2x.png">
+        <ul class="seach_cart">
+            <li><a href="#"><span class="seach">검색</span></a></li>
+            <li><a href="#"><span class="cart">장바구니</span></a></li>
+        </ul>
+        <ul class="mList">
+            <li><a href="#">가이드</a></li>
+            <li><a href="#">클래스</a></li>
+            <li><a href="#">커뮤니티</a></li>
+            <li><a href="#">스토어</a></li>
+            <li><a href="#">멤버쉽</a></li>
+        </ul>
+    </div>
+</header>
+
+<script>
+    $(document).ready(function(){
+
+        $('#menubtn').click(function(){
+            $('.Mmenu').addClass('on');
+            $('body').addClass('no-scroll');
+            $('#mbg').addClass('on');
+        });
+
+        function close(){
+            $('.Mmenu').removeClass('on');
+            $('body').removeClass('no-scroll');
+            $('#mbg').removeClass('on');
+        };
+
+        $('#xbtn').click(close);
+        $('#mbg').click(close);
+    });
+</script>    
+
+
+<section id="mainBanner">
+        <video muted autoplay loop>
+            <source src="img/bgvideo.mp4" type="video/mp4">
+        </video>
+    <div class="videoText">
+        <h2>
+            온라인에서 오프라인까지<br>
+            토탈 헬스클래스<br>
+            플랫폼 <span>D-gym</span>
+        </h2>
+    </div>
+</section>
+
+<section id="intro">
+    <div class="introImg">
+        <picture>
+            <source media="(min-width:787px)" srcset="img/intro@2x.png">
+            <source media="(max-width:786px)" srcset="img/introm@2x.png">
+            <img src="img/intro@2x.png" alt="인트로">
+          </picture>
+        <!-- <div class="introText">
+            <h2>
+                Feel Great.<br>
+                Body and Mind.
+            </h2>
+            <p>
+                다양하고 유익한 운동 정보를<br>
+                <span>D-gym</span>에서 만나보세요!
+            </p>
+        </div> -->
+    </div>
+</section>
+
+<section id="contents">
+    <div class="freecon">
+        <div class="left">
+            <a href="#" ><div class="mechine_use img"></div></a>
+            <a href="#"><div class="homeT img"></div></a>
+        </div>
+        <div class="right">
+            <a href="#"><div class="stretching img"></div></a>
+            <div class="inLeft">
+                <a href="#"><div class="inbody img"></div></a>
+            </div>
+            <div class="inRight">
+                <a href="#"><div class="posture img"></div></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="freeconM">
+        <div class="freeWrap">
+            <div class="fm fm1">
+                <a href="#"><div class="mechine_use imgM"></div></a>
+            </div>
+            <div class="fm fm2">
+                <a href="#"><div class="homeT imgM"></div></a>
+            </div>
+            <div class="fm fm3">
+                <a href="#"><div class="stretching imgM"></div></a>
+            </div>
+            <div class="fm fm4">
+                <a href="#"><div class="inbody imgM"></div></a>
+            </div>
+            <div class="fm fm5">
+                <a href="#"><div class="posture imgM"></div></a>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var startX, endX;
+        var list=$('.freeconM>div>div>a>.imgM');
+
+        $(list).each(function(index){
+            $(this).on('touchstart',function(event){
+                startX=event.originalEvent.changedTouches[0].screenX;
+        });
+        });
+        
+        $(list).each(function(index){
+            $(this).on('touchend',function(event){
+            endX=event.originalEvent.changedTouches[0].screenX;
+
+            if(startX-endX>50){
+                $(this).addClass('on');
+                list.not($(this)).removeClass('on');
+            }
+            if(endX-startX>50){
+                $(this).removeClass('on');
+            }
+        });
+        });
+
+    </script>
+
+        <div class="swiper mySwiper" id="subBannerW">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="img/mid_banner1@2x.png" alt="중간배너">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/mid_banner2@2x.png" alt="중간배너">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/mid_banner3@2x.png" alt="중간배너">
+                </div>
+                <div class="swiper-slide">
+                    <img src="img/mid_banner4@2x.png" alt="중간배너">
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+          <script>
+            var swiper = new Swiper("#subBannerW", {
+              slidesPerView: 1,
+              spaceBetween: 0,
+              loop: true,
+              autoplay: {
+              delay: 2500,
+              disableOnInteraction: false,
+              },
+              navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              },
+            });
+          </script>
+
+        <div class="swiper mySwiper" id="pClass">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/p_workout@2x.png" alt="운동클래스">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/p_food@2x.png" alt="식단클래스">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/p_custom@2x.png" alt="운동클래스">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#">
+                        <img src="img/p_off@2x.png" alt="오프라인클래스">
+                    </a>
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+
+    <script>
+        var swiper = new Swiper("#pClass", {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        breakpoints:{
+            768:{
+                slidesPerView: 2,
+                spaceBetween: 10
+            },
+            1280:{
+                slidesPerView: 2,
+                spaceBetween: 20
+            }
+        },
+        navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+        });
+    </script>
+</section>
+
+<section id="subContents">
+    <div class="community">
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="commuCard">    
+                        <div class="commuImg1"></div>
+                        <div class="commuText">
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                            </p>
+                            <span>
+                                    abc123 &nbsp; &nbsp;
+                                    24.6.18
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <div class="coIcon">
+                    <img src="img/heart@2x.png" alt="하트아이콘">
+                    <span>25</span>
+                    <img src="img/message-circle@2x.png" alt="댓글아이콘">
+                    <span>13</span>
+                </div> 
+            </li>
+            <li>
+                <a href="#">
+                    <div class="commuCard">    
+                        <div class="commuImg2"></div>
+                        <div class="commuText">
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                            </p>
+                            <span>
+                                    abc123 &nbsp; &nbsp;
+                                    24.6.18
+                            </span>
+                        </div>
+                    </div>
+                </a>  
+                <div class="coIcon">
+                    <img src="img/heart@2x.png" alt="하트아이콘">
+                    <span>25</span>
+                    <img src="img/message-circle@2x.png" alt="댓글아이콘">
+                    <span>13</span>
+                </div> 
+            </li>
+            <li>
+                <a href="#">
+                    <div class="commuCard">    
+                        <div class="commuImg3"></div>
+                        <div class="commuText">
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                            </p>
+                            <span>
+                                    abc123 &nbsp; &nbsp;
+                                    24.6.18
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <div class="coIcon">
+                    <img src="img/heart@2x.png" alt="하트아이콘">
+                    <span>25</span>
+                    <img src="img/message-circle@2x.png" alt="댓글아이콘">
+                    <span>13</span>
+                </div>   
+            </li>
+            <li>
+                <a href="#">
+                    <div class="commuCard">    
+                        <div class="commuImg4"></div>
+                        <div class="commuText">
+                            <p>
+                                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod 
+                            </p>
+                            <span>
+                                    abc123 &nbsp; &nbsp;
+                                    24.6.18
+                            </span>
+                        </div>
+                    </div>
+                </a>
+                <div class="coIcon">
+                    <img src="img/heart@2x.png" alt="하트아이콘">
+                    <span>25</span>
+                    <img src="img/message-circle@2x.png" alt="댓글아이콘">
+                    <span>13</span>
+                </div>   
+            </li>
+        </ul>
+    </div>
+
+    <div class="guideCon">
+        <h3>무엇 부터 시작해야 될까요?</h3>
+        <ul>
+            <li>
+                <a href="#">
+                    <div class="guideCard">
+                        <img src="img/start1@2x.png" alt="홈트레이닝">
+                        <h4>맨몸운동, 홈트레이닝</h4>
+                        <div class="textBox">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                elit, sed diam nonummy nibh euismod
+                            </p>
+                        </div>
+                </a>
+                        <div class="priceBox">
+                            <p class="price">
+                                무료 컨텐츠
+                            </p>
+                        </div>
+                    </div>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="guideCard">
+                        <img src="img/start2@2x.png" alt="기초근력">
+                        <h4>기초 근력, 전신운동</h4>
+                        <div class="textBox">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                elit, sed diam nonummy nibh euismod
+                        </div>
+                </a>
+                        <div class="priceBox">
+                            <p class="price">
+                                월 ₩34,000
+                            </p>
+                        </div>
+                    </div>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="guideCard">
+                        <img src="img/start3@2x.png" alt="근력성장운동">
+                        <h4>Level Up 근육성장</h4>
+                        <div class="textBox">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                elit, sed diam nonummy nibh euismod
+                            </p>
+                        </div>
+                </a>
+                        <div class="priceBox">
+                            <p class="price">
+                                월 ₩39,000
+                            </p>
+                        </div>
+                    </div>
+            </li>
+
+            <li>
+                <a href="#">
+                    <div class="guideCard">
+                        <img src="img/start4@2x.png" alt="홈트레이닝">
+                        <h4>1:1 맞춤형 운동</h4>
+                        <div class="textBox">
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetuer adipiscing 
+                                elit, sed diam nonummy nibh euismod
+                            </p>
+                        </div>
+                </a>
+                        <div class="priceBox">
+                            <p class="price">
+                                상담 후 결정
+                            </p>
+                        </div>
+                    </div>
+            </li>
+        </ul>
+    </div>
+
+    <div id="contact">
+        <div class="conteactBox">
+            <h4>CONTACT US</h4>
+            <p>궁금하신 부분은 문의해 주세요</p>
+            <img src="img/logo-Ys@2x.png">
+            <form id="conteactForm">
+                <label for="name">성함</label><br>
+                <input type="text" class="inp" name="name" placeholder="성함을 입력해주세요."><br>
+                <label for="phoneNum">전화번호</label><br>
+                <input type="number" class="inp" name="phoneNum" placeholder="전화번호를 입력해주세요."><br>
+                <label for="consu">문의내용</label><br>
+                <input type="text" class="inpBox" name="consu" placeholder="문의내용을 입력해주세요."><br>
+                <input type="submit" id="btn" name="btn" value="문의하기">
+            </form>        
+        </div>
+    </div>
+
+</section>
+<div class="aIcon">
+    <img src="img/contact@2x.png" id="conteactIcon" alt="문의 아이콘" onclick="contOpen();">
+     
+    <img src="img/up@2x.png" id="topIcon" alt="위로 아이콘">
+</div>
+
+<script>
+    const topBtn=document.querySelector('#topIcon');
+
+    topBtn.onclick=()=>{
+        window.scrollTo({top:0, behavior: 'smooth'});
+    }
+
+
+    function contOpen(){
+
+        
+        var contB=document.getElementById('contact');
+
+        if(contB.style.visibility=='hidden'){
+             contB.style.visibility='visible';
+        }else{
+             contB.style.visibility='hidden';
+        }
+    };
+
+</script>
+<footer>
+    <div class="footerBox">
+        <a href="#"><img src="img/logo-Y@2x.png" alt="로고"  class="logo"></a>
+        <p>
+            D-gym   대표 김영욱   사업자등록번호 123-45-67890
+        </p>
+        <p>
+            서울특별시 용산구 보광로19길 5-2(보광동)  대표전화 070-1234-5678
+        </p>
+        <p>
+            D-gym   대표 김영욱   사업자등록번호 123-45-67890
+        </p>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="img/youtube@2x.png" alt="유튜브">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/facebook@2x.png" alt="페이스북">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/instagram@2x.png" alt="인스타그렘">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="img/kakao@2x.png" alt="카카오톡">
+                </a>
+            </li>
+        </ul>
+    </div>
+</footer>
+<div id="mbg"></div>
+</body>
+</html>
